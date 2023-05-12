@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(213, 236, 255);
+            font: normal 20pt Helvetica;
+            color:rgb(46, 125, 194);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var name = window.prompt(`How can I call you?`)
+        document.write(`Hi <strong>${name}</strong>, your name has ${name.length} letters!<br/>`)//Comando strong deixa em negrito, e o br quebra linha
+        document.write(`Your name in uppercase is ${name.toUpperCase()}</br>`)
+        document.write(`Your name in lowercase is ${name.toLowerCase()}`)//não usei br porque não precisei quebrar linha
+    </script>
+</body>
+</html>

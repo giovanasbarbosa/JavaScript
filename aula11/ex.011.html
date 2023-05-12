@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    Digite seu país de origem: <input type="string" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+        <p>Sua nacionalidade é:</p>
+    </div>
+    <script>
+        function verificar() {
+        var pa = window.document.getElementById('pais')
+        if(pa.value=='Brasil'){ //Tem que ser dessa forma, pa.value=='X'
+            res.innerHTML += `<p>Vivendo em ${pais.value} você é brasileiro!</p>`
+        }else{
+            res.innerHTML += `<p>Vivendo em ${pais.value} você é estrangeiro!</p>`
+        } /*Aqui da mesma forma, se botar só ${pais}, ele vai 
+        [object HTMLInputElement] sem considerar o valor da variável*/
+        }
+    </script>
+</body>
+</html>
