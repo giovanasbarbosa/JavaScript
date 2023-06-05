@@ -7,4 +7,3 @@ console.log(`O vetor tem ${num.length} elementos`)
 console.log(`Em ordem crescente o vetor fica ${num.sort()}`)
 
 console.log(`O primeiro elemento é ${num[0]}`)
-
